@@ -1,0 +1,250 @@
+/* Сброс базовых стилей и подключение шрифта */
+@import url('./reset.css');
+@font-face {
+  font-family: 'AvenirNextCyr-Bold';
+  src: url('../fonts/avenirnextcyr-bold.eot');
+  src: url('../fonts/avenirnextcyr-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/avenirnextcyr-bold.woff2') format('woff2'),
+    url('../fonts/avenirnextcyr-bold.woff') format('woff'),
+    url('../fonts/avenirnextcyr-bold.ttf') format('truetype'),
+    url('../fonts/avenirnextcyr-bold.svg#avenirnextcyr-bold') format('svg');
+}
+
+/* Общие стили */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 138px 0px 0px 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Contacts Header */
+.contacts-header__content {
+  max-width: 462px;
+}
+
+.contacts-header__title {
+  font-family: 'AvenirNextCyr-Bold';
+  font-size: 32px;
+  line-height: 44px;
+  color: #1a1a1a;
+  padding-bottom: 13px;
+}
+
+.contacts-header__desc {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #1a1a1a;
+  padding-bottom: 35px;
+}
+
+/* Contacts Form */
+.contacts-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contacts-form__input {
+  background: #fff;
+  box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #414042;
+  opacity: 0.5;
+  padding: 18px 0px 18px 19px;
+  margin: 0px 22px 35px 0px;
+  max-height: 64px;
+}
+
+.contacts-form__select {
+  background: #fff;
+  box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #414042;
+  opacity: 0.5;
+  padding: 18px 0px 18px 19px;
+  margin: 0px 22px 35px 0px;
+}
+
+.contacts-form__select_large {
+  grid-column: span 2 / span 2;
+}
+
+.contacts-form__list {
+  display: none;
+}
+
+.contacts-form__select.active .contacts-form__list {
+  display: block;
+}
+
+.contacts-form__list li:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.contacts-form__title {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.contacts-form__title i {
+  font-size: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contacts-form__select.active .contacts-form__title i {
+  transform: rotate(-180deg);
+}
+
+.contacts-form__textarea {
+  background: #fff;
+  box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #414042;
+  opacity: 0.5;
+  padding: 18px 0px 0px 19px;
+  margin-bottom: 51px;
+  grid-column: span 2 / span 2;
+  height: 338px;
+  width: 614px;
+}
+
+button {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  padding: 19px 22px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Map */
+#map {
+  width: 420px;
+  height: 700px;
+  margin-left: 130px;
+  margin-top: 138px;
+}
+
+.gmnoprint,
+.gm-control-active,
+.gm-style-cc,
+.gm-style-iw-tc {
+  display: none;
+}
+
+.gm-style-iw {
+  width: 244px;
+  height: 161px;
+  position: relative;
+}
+
+.title {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 167%;
+  color: #1a1a1a;
+}
+
+.address {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: #1a1a1a;
+  padding-bottom: 5px;
+}
+
+.contacts {
+  display: grid;
+}
+
+.phone-icon {
+  position: absolute;
+  top: 100px;
+  left: 12px;
+}
+
+.email-icon {
+  position: absolute;
+  top: 124px;
+  left: 12px;
+}
+
+.phone {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 183%;
+  color: #858585;
+}
+
+.mail {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 183%;
+  color: #858585;
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+  .container {
+    padding: 77px 0px 0px 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .contacts-header__desc {
+    max-width: 295px;
+  }
+
+  .contacts-form {
+    display: block;
+    max-width: 310px;
+  }
+
+  .contacts-form__select_large {
+    grid-column: span 1;
+  }
+
+  .contacts-form__textarea {
+    width: 288px;
+  }
+
+  .button {
+    width: 288px;
+  }
+
+  #map {
+    width: 288px;
+    height: 573px;
+    margin: 63px 20px 163px 20px;
+    margin-top: 138px;
+  }
+}
