@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contacts">
+        <div class="contacts-header">
+          <div class="contacts-header__content">
+            <h1 class="contacts-header__title">Contact Us</h1>
+            <p class="contacts-header__desc">
+              The Voodoo team is looking forward to hearing from you!
+            </p>
+          </div>
+        </div>
+        <form action="" class="contacts-form">
+          <div class="contacts-form__input">
+            <input type="text" required placeholder="Full Name*" />
+          </div>
+          <div class="contacts-form__input">
+            <input type="text" required placeholder="Title/Position*" />
+          </div>
+          <div class="contacts-form__select">
+            <div class="contacts-form__title">
+              <span>Practice / Institution*</span>
+              <i class="uil uil-angle-down"></i>
+            </div>
+            <ul class="contacts-form__list">
+              <li>Option 1</li>
+              <li>Option 2</li>
+              <li>Option 3</li>
+              <li>Option 4</li>
+              <li>Option 5</li>
+            </ul>
+          </div>
+          <div class="contacts-form__input">
+            <input type="text" required placeholder="Email Address*" />
+          </div>
+          <div class="contacts-form__input">
+            <input type="text" required placeholder="Phone Number*" />
+          </div>
+          <div class="contacts-form__select">
+            <div class="contacts-form__title">
+              <span>Medical Profession*</span>
+              <i class="uil uil-angle-down"></i>
+            </div>
+            <ul class="contacts-form__list">
+              <li>Option 1</li>
+              <li>Option 2</li>
+              <li>Option 3</li>
+              <li>Option 4</li>
+              <li>Option 5</li>
+            </ul>
+          </div>
+          <div class="contacts-form__select contacts-form__select_large">
+            <div class="contacts-form__title">
+              <span>Type of Inquiry*</span>
+              <i class="uil uil-angle-down"></i>
+            </div>
+            <ul class="contacts-form__list">
+              <li>Option 1</li>
+              <li>Option 2</li>
+              <li>Option 3</li>
+              <li>Option 4</li>
+              <li>Option 5</li>
+            </ul>
+          </div>
+          <div class="contacts-form__textarea">
+            <textarea
+              placeholder="Enter Message*"
+              required
+              cols="61"
+              rows="16"
+            ></textarea>
+          </div>
+        </form>
+        <div>
+          <button class="button" type="submit">Send Message</button>
+        </div>
+      </div>
+      <div id="map"></div>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4mypNUkiisiumY6NRcEiE0nOY9EuOO0&callback=initMap&v=weekly"
+        defer
+      ></script>
+      <script src="./app.js"></script>
+    </div>
+  </body>
+</html>
