@@ -173,7 +173,7 @@ function initMap() {
   });
   const info = new google.maps.InfoWindow({
     content:
-      '<h2 class="title">Voodoo</h2><p class="address">137 Glasgow St., Unit 115<br> Kitchener, ON N2G 4X8<br>Ukraine</p><div class="contacts"><img src="./img/phone.svg" class="phone-icon"><a class="phone" href="telto:1-800-480-9597">1-800-480-9597</a><img src="./img/mail.png" class="email-icon"><a class="mail" href="mailto:info@voodoo.com">info@voodoo.com</a></div>',
+      '<h2 class="title">Voodoo</h2><p class="address">137 Glasgow St., Unit 115<br> Kitchener, ON N2G 4X8<br>Ukraine</p><div class="contacts"><img src="./img/phone.svg" class="phone-icon"><a class="phone" href="tel:1-800-480-9597">1-800-480-9597</a><img src="./img/mail.png" class="email-icon"><a class="mail" href="mailto:info@voodoo.com">info@voodoo.com</a></div>',
   });
   marker.addListener('click', function () {
     info.open(map, marker);
